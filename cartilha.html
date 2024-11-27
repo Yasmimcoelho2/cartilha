@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança Infantil na Internet - Cartilha</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="interacao.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logosenacv2.png" alt="Logo do Senac" class="logo">
+        </div>
+        <h1>Proteção Digital para Crianças e Adolescentes</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="cartilha.html">Cartilha</a>
+            <a href="ferramentas.html">Ferramentas</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h2>Cartilha</h2>
+
+        <p>Com o crescimento exponencial da conectividade global, a internet tornou-se parte essencial da vida moderna, incluindo a de crianças e adolescentes.<br> Embora esse ambiente ofereça oportunidades para aprendizado, entretenimento e socialização, ele também apresenta inúmeros riscos que podem comprometer o bem-estar físico, emocional e psicológico dos jovens.<br> É nesse contexto que surge a segurança e a proteção digital com ferramentas indispensáveis para garantir um uso saudável e seguro das tecnologias por parte dos menores de idade.  
+        </p>
+        <h3>O que é segurança infantil na internet?</h3>
+        <p>A segurança infantil refere-se a um conjunto de práticas, normas e tecnologias destinadas a proteger crianças e adolescentes contra riscos associados ao uso da internet. <br> Esses riscos incluem exposição a conteúdos inadequados, ciberbullying, aliciamento (grooming), roubo de dados e outras ameaças que podem surgir em ambientes digitais.<br></p> 
+
+            <p>Essa proteção abrange diferentes áreas:<br></p>
+            
+            <p><b>Tecnológica: </b> Inclui o uso de softwares de controle parental, bloqueadores de conteúdo e antivírus.<br></p>
+
+            <p><b>Educacional:</b> Envolve ensinar crianças, adolescentes e seus responsáveis sobre boas práticas de navegação e sobre como identificar ameaças.<br></p>
+
+            <p><b>Comportamental:</b>Promove o acompanhamento ativo dos hábitos digitais e a criação de um diálogo aberto entre pais, professores e jovens sobre os desafios da internet. </p>
+
+            <h3>Para que serve a proteção digital para crianças e adolescentes?</h3>
+
+            <p>A proteção digital tem como função principal criar um ambiente virtual seguro e educativo, no qual crianças e adolescentes possam explorar a tecnologia com liberdade, mas sem colocar em risco sua privacidade, integridade física ou emocional. Suas finalidades incluem: <br> </p>
+
+            <p>
+             <ul>
+             <li>Proteção contra conteúdos inadequados:</li>
+             <li>Prevenção de interações perigosas:</li>
+             <li>Preservação da privacidade;</li>
+             <li>Combate ao ciberbullying;</li>
+             <li>Promoção do bem estar digital.</li>
+             </ul>
+                
+             <h3>Qual sua importância?</h3>
+                
+            <p> A segurança infantil na internet é uma questão essencial no mundo digital atual, onde crianças têm acesso cada vez mais precoce à tecnologia.<br>
+                
+                O uso inadequado ou desprotegido da internet pode expor os jovens a diversos riscos, como o cyberbullying; acesso a conteúdos impróprios; contato com estranhos mal-intencionados e violação de privacidade.<br>
+                
+                Os pais, educadores e responsáveis desempenham um papel fundamental na proteção das crianças. É crucial estabelecer limites de uso, monitorar a atividade online, orientar sobre os perigos da exposição excessiva e incentivar o uso responsável da tecnologia. Ferramentas como controle parental, softwares de bloqueio de conteúdos e a criação de senhas seguras ajudam a reduzir os riscos.<br>
+                
+                Além disso, é essencial educar as crianças sobre práticas seguras, como não compartilhar informações pessoais, evitar conversas com desconhecidos e relatar qualquer comportamento ou conteúdo inadequado. A comunicação aberta entre pais e filhos, combinada com a conscientização digital, contribui significativamente para um ambiente online mais seguro e saudável.<br>
+
+
+            </p>
+
+
+        <p><b>Aprenda sobre:</b></p>
+        <ul>
+            <li>Riscos no mundo digital: cyberbullying, conteúdos inapropriados e phishing.</li>
+            <li>Ferramentas de bloqueio de sites inapropriados.</li>
+            <li>Dicas para monitorar atividades online das crianças.</li>
+            <li>Educação sobre privacidade e limites digitais.</li>
+        </ul>
+    </section>
+
+        <section class="section">
+            <h2>Cartilha Digital</h2>
+            <p>Explore nossa cartilha digital diretamente aqui ou faça o download:</p>
+            <iframe src="cartilha.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 8px;"></iframe>
+            <br>
+            <a href="cartilha.pdf" download class="btn">Baixar Cartilha (PDF)</a>
+            <script>
+            document.getElementById('Cartilha').addEventListener('click'), function() {
+                window.open(document.getElementById('downloadBtn').addEventListener('click',()=>{
+                const pdfContent = 'cartilha.pdf';
+                const blob = new Blob([pdfContent],{type:'application/pdf'});
+                const link = document.createElement('a');
+                const pdfURL = 'C:\Users\Aluno\Desktop\Projeto Cartilha'; 
+                    link.href = URL.createObjectURL(blob);
+                    link.download = 'cartilha.pdf';
+            document.body.appendChild(link);
+                link.click();
+            document.removeChild(link);
+            URL.revokeObjectURL(link.href);
+                })
+            )};
+            </script>
+        </section>
+
+
+</body>
+</html>
